@@ -1,3 +1,5 @@
+# -*- coding: UTF-8 -*-
+
 #Verificador de Senhas
 from os import system
 import random
@@ -122,16 +124,15 @@ def wordPass():
     #Gera senhas seguras através da junção de palavras aleatóreas
     word = open('words.txt','r')
     senha = ''
-    l = random.randint(2,5)
+    l = random.randint(2,4)
     while l > 0:
-        n = random.randint(1,7763)
+        n = random.randint(1,7660)
         word.seek(0)
         while n > 0:
             linha = list(word.readline())
             n = n - 1
         del linha [-1]
         linha = ''.join(linha)
-        linha = removerAcentos(linha)
         senha = senha + linha.capitalize()
         l = l - 1
     return(senha)
@@ -164,14 +165,14 @@ def main():
         if n == 2:
             logo()
             print ('\nopção 1: ', randPass(),end = '')
-            print('     opção 2:', wordPass(), '\n')
-            print ('opção 3: ', randPass(),end = '')
-            print('     opção 4:', wordPass(), '\n')
-            print ('opção 5: ', randPass(),end = '')
             print('     opção 6:', wordPass(), '\n')
-            print ('opção 7: ', randPass(),end = '')
+            print ('opção 2: ', randPass(),end = '')
+            print('     opção 7:', wordPass(), '\n')
+            print ('opção 3: ', randPass(),end = '')
             print('     opção 8:', wordPass(), '\n')
-            print ('opção 9: ', randPass(),end = '')
+            print ('opção 4: ', randPass(),end = '')
+            print('     opção 9:', wordPass(), '\n')
+            print ('opção 5: ', randPass(),end = '')
             print('     opção 10:', wordPass(), '\n')
         if n == 3:
             break
