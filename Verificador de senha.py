@@ -4,6 +4,7 @@ import random
 import time
 from tqdm import trange
 import _thread as td
+from unicodedata import normalize
 
 fim = False
 def logo():
@@ -105,7 +106,7 @@ def listaDeSenhas(x):
         print('\nTempo de busca:',tempo,'segundos')
     fim = 10
 
-def criarSenha():
+def randPass():
     #Gera senhas seguras de forma aleatórea
     
     minusculas = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
@@ -116,7 +117,29 @@ def criarSenha():
     random.shuffle(senhalista)
     senha = ''.join(senhalista)
     return senha
+
+def wordPass():
+    #Gera senhas seguras através da junção de palavras aleatóreas
+    word = open('words.txt','r')
+    senha = ''
+    l = random.randint(2,5)
+    while l > 0:
+        n = random.randint(1,7763)
+        word.seek(0)
+        while n > 0:
+            linha = list(word.readline())
+            n = n - 1
+        del linha [-1]
+        linha = ''.join(linha)
+        linha = removerAcentos(linha)
+        senha = senha + linha.capitalize()
+        l = l - 1
+    return(senha)
     
+    
+def removerAcentos(txt):
+    return normalize('NFKD', txt).encode('ASCII', 'ignore').decode('ASCII')
+  
 def main():
     global fim
     system("cls")
@@ -140,13 +163,17 @@ def main():
                                 
         if n == 2:
             logo()
-            print ('\nopção 1: ', criarSenha(),'\n')
-            print ('opção 2: ', criarSenha(),'\n')
-            print ('opção 3: ', criarSenha(),'\n')
-            print ('opção 4: ', criarSenha(),'\n')
-            print ('opção 5: ', criarSenha(),'\n')
+            print ('\nopção 1: ', randPass(),end = '')
+            print('     opção 2:', wordPass(), '\n')
+            print ('opção 3: ', randPass(),end = '')
+            print('     opção 4:', wordPass(), '\n')
+            print ('opção 5: ', randPass(),end = '')
+            print('     opção 6:', wordPass(), '\n')
+            print ('opção 7: ', randPass(),end = '')
+            print('     opção 8:', wordPass(), '\n')
+            print ('opção 9: ', randPass(),end = '')
+            print('     opção 10:', wordPass(), '\n')
         if n == 3:
             break
-    
     
 main()
