@@ -26,7 +26,7 @@
    
    ## Imagens
    
-   ### Tela de inínio
+   ### Tela de início
    ![alt text](https://github.com/caiobrandini/HackoonSpace/blob/master/Fotos/in%C3%ADcio.PNG)
    
    ### Tela de verificação de senha
