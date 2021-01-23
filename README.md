@@ -24,6 +24,17 @@
    2. Abra o cmd na pasta do arquivo
    3. Execute através do terminal com "Python Verificador de senha.py"
    
+   ## Imagens
+   
+   ### Tela de inínio
+   ![alt text](https://github.com/caiobrandini/HackoonSpace/blob/master/Fotos/in%C3%ADcio.PNG)
+   
+   ### Tela de verificação de senha
+   ![alt text](https://github.com/caiobrandini/HackoonSpace/blob/master/Fotos/in%C3%ADcio.PNG)
+   
+   ### Tela de geração de senha forte
+   ![alt text](https://github.com/caiobrandini/HackoonSpace/blob/master/Fotos/in%C3%ADcio.PNG)
+   
    
    Autor: Caio Brandini
    
