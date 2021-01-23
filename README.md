@@ -30,10 +30,10 @@
    ![alt text](https://github.com/caiobrandini/HackoonSpace/blob/master/Fotos/in%C3%ADcio.PNG)
    
    ### Tela de verificação de senha
-   ![alt text](https://github.com/caiobrandini/HackoonSpace/blob/master/Fotos/in%C3%ADcio.PNG)
+   ![alt text](https://github.com/caiobrandini/HackoonSpace/blob/master/Fotos/Funcionando.PNG)
    
    ### Tela de geração de senha forte
-   ![alt text](https://github.com/caiobrandini/HackoonSpace/blob/master/Fotos/in%C3%ADcio.PNG)
+   ![alt text](https://github.com/caiobrandini/HackoonSpace/blob/master/Fotos/Gerador.PNG)
    
    
    Autor: Caio Brandini
